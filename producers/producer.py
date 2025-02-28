@@ -7,8 +7,8 @@ channel = connection.channel()
 channel.queue_declare(queue='task_queue', durable=True)
 
 # Send messages
-for i in range(10):
-    message = f"Task {i}"
+for i in range(1):
+    message = f"C:/Workspace/tools-testing/rabbitmq/ATR2024_01.xlsx"
     channel.basic_publish(
         exchange='',
         routing_key='task_queue',

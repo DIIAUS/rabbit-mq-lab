@@ -1,0 +1,7 @@
+venv
+.conda/
+ipynb
+test_process.py
+consumers/atr_process.py
+consumers/cdr_process.py
+producers/cdr_producer.py
