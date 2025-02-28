@@ -28,9 +28,6 @@ def main():
         channel.stop_consuming()  # Stop consuming before closing
         connection.close()
         print("Connection closed. Exiting gracefully.")
-    except Exception as e:
-        connection.close()
-        print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
     try:
